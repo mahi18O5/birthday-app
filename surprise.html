@@ -9,9 +9,12 @@
       padding: 0;
       overflow: hidden;
       font-family: 'Comic Sans MS', cursive;
-      background: url('https://images.unsplash.com/photo-1516116216624-53e697fedbe2') no-repeat center center/cover;
+      /* Changed background to a gradient instead of image */
+      background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
       color: #fff;
       text-align: center;
+      height: 100vh;
+      width: 100vw;
     }
 
     h1 {
@@ -34,7 +37,7 @@
       font-weight: bold;
       color: #ffb6c1;
       text-shadow: 0 0 10px #fff;
-      animation: scroll 05s linear infinite, glow 2s ease-in-out infinite alternate;
+      animation: scroll 5s linear infinite, glow 2s ease-in-out infinite alternate;
     }
 
     @keyframes scroll {
@@ -47,16 +50,6 @@
       100% { text-shadow: 0 0 20px #ffffff, 0 0 30px #ff69b4; }
     }
 
-    .cake {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-      bottom: 25vh;
-      width: 200px;
-      height: 200px;
-      background: url('https://i.imgur.com/LrKXH2F.png') no-repeat center center/contain;
-      animation: pop 1.5s ease-out forwards;
-    }
 
     @keyframes pop {
       0% { transform: translateX(-50%) scale(0); opacity: 0; }
@@ -91,9 +84,11 @@
 
   <h1>🎆 Happy Birthday Chiitna! <br> I hope you'll like it. 🎉</h1>
 
-  <iframe src="https://go.screenpal.com/watch/cTi11onl0fp" allowfullscreen></iframe>
+  <video width="18.5%" controls autoplay loop>
+  <source src="birthday_video.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
-  <div class="cake"></div>
 
   <div class="message"></div>
 
@@ -150,6 +145,5 @@
   </script>
 </body>
 </html>
-
 
 
