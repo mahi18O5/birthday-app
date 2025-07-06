@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Puzzle 2</title>
+  <style>
+    body {
+      background: #fff5e6;
+      text-align: center;
+      font-family: 'Comic Sans MS';
+      padding-top: 60px;
+    }
+    input, button {
+      padding: 10px;
+      font-size: 1em;
+      border-radius: 10px;
+    }
+    button {
+      background: #ffa07a;
+      color: white;
+      border: none;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h2>🧠 Which colour we both used on each other on holi first?</h2>
+  <input type="text" id="answer">
+  <br><button onclick="check()">Submit</button>
+  <p id="msg"></p>
+  <script>
+    if (localStorage.getItem("access1") !== "true") {
+      alert("Go back to the message page first!");
+      window.location.href = "message.html";
+    }
+
+    function check() {
+      const ans = document.getElementById("answer").value.toLowerCase().trim();
+      if (ans === "red") {
+        localStorage.setItem("access2", "true");
+        document.getElementById("msg").innerText = "🎉 Correct! Redirecting to the surprise...";
+        setTimeout(() => window.location.href = "surprise.html", 1500);
+      } else {
+        document.getElementById("msg").innerText = "❌ yaad kro!";
+      }
+    }
+  </script>
+</body>
+</html>

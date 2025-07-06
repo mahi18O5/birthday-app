@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Birthday Memories</title>
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(to bottom, #ffe6f5, #ffcce6);
+      font-family: 'Comic Sans MS', cursive;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      color: #d63384;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .scene {
+      width: 300px;
+      height: 300px;
+      perspective: 1000px;
+    }
+
+    .carousel {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      transform-style: preserve-3d;
+      animation: rotate 25s infinite linear;
+    }
+
+    .carousel img {
+      position: absolute;
+      width: 280px;
+      height: 180px;
+      object-fit: cover;
+      border: 4px solid #ff66b2;
+      border-radius: 12px;
+      box-shadow: 0 0 15px #ff99cc;
+    }
+
+    .carousel img:nth-child(1) { transform: rotateY(0deg) translateZ(400px); }
+    .carousel img:nth-child(2) { transform: rotateY(60deg) translateZ(400px); }
+    .carousel img:nth-child(3) { transform: rotateY(120deg) translateZ(400px); }
+    .carousel img:nth-child(4) { transform: rotateY(180deg) translateZ(400px); }
+    .carousel img:nth-child(5) { transform: rotateY(240deg) translateZ(400px); }
+    .carousel img:nth-child(6) { transform: rotateY(300deg) translateZ(400px); }
+
+    @keyframes rotate {
+      from { transform: rotateY(0deg); }
+      to { transform: rotateY(360deg); }
+    }
+
+    .note {
+      margin-top: 40px;
+      max-width: 600px;
+      background: #fff8fb;
+      border: 2px dashed #ff99cc;
+      padding: 25px;
+      border-radius: 20px;
+      color: #d63384;
+      font-size: 1.2em;
+      box-shadow: 0 0 15px #ffd6e8;
+      text-align: center;
+    }
+
+    .note::before {
+      content: "💌";
+      font-size: 2em;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    button {
+      margin-top: 40px;
+      padding: 12px 25px;
+      background: #ff69b4;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.1em;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <script>
+    if (localStorage.getItem("access1") !== "true") {
+      alert("Oops! Solve the first puzzle first.");
+      window.location.href = "puzzle1.html";
+    }
+  </script>
+
+  <h1>🌟Your cute memories with cute photos🌟</h1>
+
+  <div class="scene">
+    <div class="carousel">
+        <img src="https://i.ibb.co/vvJtS1Tp/IMG-0414.png" alt="IMG-0414" border="0"></a>
+    
+        <img src="https://i.ibb.co/GQ5xbK0P/IMG-0415.png" alt="IMG-0415" border="0"></a> 
+        
+        <img src="https://i.ibb.co/YT4tnKHX/IMG-0416.png" alt="IMG-0416" border="0"></a>
+        <img src="https://i.ibb.co/hxHbz10b/IMG-0422.png" alt="IMG-0422" border="0"></a>
+        <img src="https://i.ibb.co/HTs0zxQw/IMG-0424.png" alt="IMG-0424" border="0"></a>
+        <a href="https://ibb.co/Gf4yGf3t"><img src="https://i.ibb.co/bjMTYjR2/IMG-0423.png" alt="IMG_0423" border="0"></a>
+    </div>
+  </div> 
+  <body>
+    QT
+    <audio autoplay loop>
+      <source src="https://cdn.pixabay.com/audio/2023/02/22/audio_d8b99a7c21.mp3" type="audio/mpeg">
+
+    </audio>
+    pie <br>u want a long paragraph <br>so ⬇️
+  </body>
+  
+
+  </audio>
+  
+  <div class="note">
+    July 8th 2007 <br>9:10 <br>when all this begin when u were born and <br> come to this wrld and started this beautiful journey. <br>
+    Dear Chetna💕,<br>
+
+On this special day, I just want to remind you how truly amazing you are.
+You’re more than a friend — you’re family, a piece of my heart, and a soul that brings light into everyone's life. <br><br>
+
+Thank you for every laugh we’ve shared, every late-night talk, every time you lifted everyone up without even trying.
+You make the world kinder, brighter, and so much more fun. 🌈<br><br>
+Even if u say m aisi hu m waisi hu but way down i know who u r and wht a lvly
+and cute heart❤️ u have and i will try ki tumhare ye cute sa childish heart aise hi rhe
+koi hurt na krr ske never ever. Apne aap ko hmesa aise hi rhkna(bss thda khaa maan liya kr mera)
+don't try to chng urself. i wish not just this day, not jst this month, not jst this year 
+ur whole life will fulfill with joy and ur all types of smile u have💫✨💕. <br><br>
+
+May your birthday be as beautiful as your heart, and your year be filled with dreams coming true. <br><br>
+Spreading happiness and laughter since 2007... <br><br>
+
+Once again Happy Birthday, my friend... 💖<br>
+
+With all my love,<br>
+Mahesh 🎈
+  </div>
+
+  <a href="puzzle2.html"><button>Next Puzzle 🧠</button></a>
+
+</body>
+</html>
+
